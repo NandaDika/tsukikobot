@@ -19,6 +19,7 @@
     "fluent-ffmpeg": "^2.1.2",
     "foobar": "1.1.0",
     "fs": "0.0.1-security",
+    "heroku": "^7.42.6",
     "request": "^2.88.2",
     "ytdl-core": "^3.2.1"
   },

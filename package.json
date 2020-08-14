@@ -20,5 +20,14 @@
     "fs": "0.0.1-security",
     "request": "^2.88.2",
     "ytdl-core": "^3.2.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NandaDika/tsukikobot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NandaDika/tsukikobot/issues"
+  },
+  "homepage": "https://github.com/NandaDika/tsukikobot#readme"
 }

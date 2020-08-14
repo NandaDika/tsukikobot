@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "Simple bot Made by NekoKing-",
   "main": "run.js",
+  "engines": {
+    "node": "12.x"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

@@ -1,3 +1,6 @@
+const usercard = require('./usercard');
+const { userInfo } = require('os');
+
 module.exports = {
     name: 'neko',
     description: "says neko",
@@ -39,8 +42,15 @@ module.exports = {
         
                     return;
                 }
-        
-                message.channel.send("```Here Is Your Cat Sir!```"), message.channel.send( urls[Math.floor(Math.random() * urls.length)]);
+                
+                const img = urls[Math.floor(Math.random() * urls.length)];
+                const nama = message.author.tag
+                const embed = new Discord.MessageEmbed()
+                .setTitle('This is what you want?')
+                .setImage(img)
+                .setColor(0xff369e)
+                .setFooter('requested by' + nama)
+                message.channel.send(embed);
         
             });
         

@@ -40,8 +40,14 @@ module.exports = {
                     return;
                 }
         
-                message.channel.send("```Cursed image isn't bad!```"), message.channel.send( urls[Math.floor(Math.random() * urls.length)]);
-        
+                const img = urls[Math.floor(Math.random() * urls.length)];
+                const nama = message.author.tag
+                const embed = new Discord.MessageEmbed()
+                .setTitle('This is your cursed image')
+                .setImage(img)
+                .setColor(0xff0000)
+                .setFooter('requested by' + nama)
+                message.channel.send(embed);
             });
         
         

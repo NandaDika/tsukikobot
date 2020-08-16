@@ -40,8 +40,14 @@ module.exports = {
                     return;
                 }
         
-                message.channel.send("```Here Is Your Meme Litle Shit!```"), message.channel.send( urls[Math.floor(Math.random() * urls.length)]);
-        
+                const img = urls[Math.floor(Math.random() * urls.length)];
+                const nama = message.author.tag
+                const embed = new Discord.MessageEmbed()
+                .setTitle('here is your meme')
+                .setImage(img)
+                .setColor(0x009416)
+                .setFooter('requested by' + nama)
+                message.channel.send(embed);
             });
         
         

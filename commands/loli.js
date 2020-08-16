@@ -40,8 +40,14 @@ module.exports = {
                     return;
                 }
         
-                message.channel.send("```Be careful FBI is watching you!```"), message.channel.send( urls[Math.floor(Math.random() * urls.length)]);
-        
+                const img = urls[Math.floor(Math.random() * urls.length)];
+                const nama = message.author.tag
+                const embed = new Discord.MessageEmbed()
+                .setTitle('**Becareful FBI is watching you**')
+                .setImage(img)
+                .setColor(0x00fff)
+                .setFooter('requested by' + nama)
+                message.channel.send(embed);
             });
         
         

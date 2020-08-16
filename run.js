@@ -92,13 +92,13 @@ client.on('message',msg => {
 
 client.on('message',msg => {
     if (msg.content === 'tsukiko') {
-        msg.reply("Apa manggil-manggil, Gw laporin ke @『NekoKing-』#4262");
+        msg.reply("?????");
     }
 });
 
 client.on('message', msg => {
     if (msg.content === 'Halo') {
-      msg.reply('Apaan sih anying sok deket >:u');
+      msg.reply('Halo juga :)');
     }
   });
 

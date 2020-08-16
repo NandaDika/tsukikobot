@@ -74,13 +74,13 @@ client.on('message', message =>{
 });
 
 client.on('message', message =>{
-    if (!message.content.startsWith(prefix) || message.author.bot) return;
+    let args = message.content.substring(prefix.length).split(" ");
 
-    const args = message.content.slice(prefix.length).split(/ +/);
-    const command = args.shift().toLowerCase();
-
-    if(command === 'help'){
-        message.channel.send("```t!neko``` summon random neko pic, ```t!meme``` summon random memes, ```t!loli``` summon random loli");
+    switch (args[0]) {
+        case "help":
+            client.command.get('help').execute(message, args);
+        
+        break;
     }
 });
 

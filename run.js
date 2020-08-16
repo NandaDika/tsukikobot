@@ -24,7 +24,7 @@ client.once('ready', () => {
 });
 
 client.on('ready', () =>{
-    client.user.setActivity('NekoKing-', {type: 'WATCHING'}).catch(console.error);
+    client.user.setActivity('NekoKing- / t!help', {type: 'WATCHING'}).catch(console.error);
 })
 
 

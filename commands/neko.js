@@ -1,6 +1,3 @@
-const usercard = require('./usercard');
-const { userInfo } = require('os');
-
 module.exports = {
     name: 'neko',
     description: "says neko",

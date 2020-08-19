@@ -16,6 +16,7 @@ module.exports = {
         .addField('t!neko', 'summon random neko picture')
         .addField('t!cursed', 'give you random cursed image')
         .addField('t!loli', 'random loli picture will appear',)
+        .addField('t!covid "country"', 'Coronavirus Case Update')
         .setColor(0xf200ff)
         .setThumbnail('https://static.zerochan.net/Tsutsukakushi.Tsukiko.full.1895115.jpg')
         .setFooter('TsukikoBot-')

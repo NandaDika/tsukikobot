@@ -17,6 +17,7 @@ module.exports = {
         .addField('t!cursed', 'give you random cursed image')
         .addField('t!loli', 'random loli picture will appear',)
         .addField('t!covid "country"', 'Coronavirus Case Update')
+        .addField('t!r6stats "Username"', 'displays statistics of your account')
         .setColor(0xf200ff)
         .setThumbnail('https://static.zerochan.net/Tsutsukakushi.Tsukiko.full.1895115.jpg')
         .setFooter('TsukikoBot-')

@@ -24,7 +24,7 @@ client.once('ready', () => {
 });
 
 client.on('ready', () =>{
-    client.user.setActivity('NekoKing- | t!help', {type: 'WATCHING'}).catch(console.error);
+    client.user.setActivity('NekoKing- || t!help', {type: 'WATCHING'}).catch(console.error);
 })
 
 
@@ -94,6 +94,19 @@ client.on('message', message =>{
         break;
     }
 });
+
+client.on('message', message =>{
+    let args = message.content.substring(prefix.length).split(" ");
+
+    switch (args[0]) {
+        case "r6stats":
+            client.command.get('r6stats').execute(message, args);
+            
+        
+        break;
+    }
+});
+
 
 client.on('message',msg => {
     if (msg.content === 'Anjing') {

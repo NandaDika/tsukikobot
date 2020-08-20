@@ -26,7 +26,7 @@ module.exports = {
                 
                 
                 const embed = new Discord.MessageEmbed()
-                .setTitle('Rainbow Siege Stats')
+                .setTitle('Rainbow Six Siege Stats')
                 .addField('Username', r6name)
                 .addField('K/D', r6kd)
                 .addField('Win rate Casual', r6wrc)
